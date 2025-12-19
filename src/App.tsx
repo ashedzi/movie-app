@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './styles/main.css'
-import FavoriteButton from './components/favoriteButton'
+import Button from './components/button'
 
 function App() {
 
   return (
     <>
+
     </>
   )
 }

@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/main.css'
+import FavoriteButton from './components/favoriteButton'
 
 function App() {
 
   return (
     <>
-    <div className="h-screen w-screen bg-blue-500 text-white flex items-center justify-center">
-      Tailwind is working! 🎉
-    </div>
     </>
   )
 }

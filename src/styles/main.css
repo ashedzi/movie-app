@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+  min-height: 100vh;
+}
+
+@theme {
+  --color-heart: #C30115;
+}

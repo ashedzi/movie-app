@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './styles/main.css'
-import Button from './components/button'
+import Chip from './components/chip'
 
 function App() {
 
   return (
     <>
-
+      <Chip> Thriller </Chip>
     </>
   )
 }

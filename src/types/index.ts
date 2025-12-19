@@ -11,10 +11,4 @@ export interface Genre {
     "name": string;
 }
 
-export interface FavoriteButtonProps {
-    movieId: string;
-}
 
-export interface ButtonProps {
-    children: React.ReactNode;
-}

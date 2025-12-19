@@ -1,8 +1,11 @@
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import type { FavoriteButtonProps } from '../types';
 import {useState} from 'react';
 
-function FavoriteButton({movieId}: FavoriteButtonProps) {
+interface Props {
+    movieId: string;
+}
+
+function FavoriteButton({movieId}: Props) {
 
     const [isFavorite, SetIsFavorite] = useState(false);
 

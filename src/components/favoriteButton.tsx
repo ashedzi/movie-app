@@ -14,9 +14,11 @@ function FavoriteButton({movieId}: Props) {
     }
 
     return(
-        <button 
-        className="bg-transparent border-none p-0 cursor-pointer" 
-        onClick={handleClick} > {isFavorite ? <FaHeart className="text-heart" /> : <FaRegHeart />} </button>
+        <div className='bg-white/10 backdrop-blur-md inline-flex items-center rounded-full p-1'>
+            <button 
+            className="cursor-pointer" 
+            onClick={handleClick} > {isFavorite ? <FaHeart className="text-heart" /> : <FaRegHeart className='text-white'/>} </button>
+        </div>
     )
 }
 

@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './styles/main.css'
-import Chip from './components/chip'
+import RatingsChip from './components/ratingsChip'
 
 function App() {
 
   return (
     <>
-      <Chip> Thriller </Chip>
+      <RatingsChip> 77% </RatingsChip>
     </>
   )
 }

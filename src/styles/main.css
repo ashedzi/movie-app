@@ -2,9 +2,11 @@
 
 body {
   min-height: 100vh;
+  background-color: #0B0B0B;
 }
 
 @theme {
   --color-heart: #C30115;
   --color-primary: #E40039;
+  --color-thumbs-up: #F5C542;
 }

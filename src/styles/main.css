@@ -3,10 +3,12 @@
 body {
   min-height: 100vh;
   background-color: #0B0B0B;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @theme {
   --color-heart: #C30115;
   --color-primary: #E40039;
   --color-thumbs-up: #F5C542;
+  --color-card-skeleton: #424242;
 }

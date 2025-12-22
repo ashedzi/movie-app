@@ -2,7 +2,7 @@ import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import {useState} from 'react';
 
 interface Props {
-    movieId: string;
+    movieId: number;
 }
 
 function FavoriteButton({movieId}: Props) {

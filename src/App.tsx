@@ -1,14 +1,22 @@
 import { useState } from 'react'
 import './styles/main.css'
-import RatingsChip from './components/ratingsChip'
-import FavoriteButton from './components/favoriteButton'
+import MovieCard from './components/movieCard'
 
 function App() {
 
   return (
     <>
-      <FavoriteButton />
-      <RatingsChip> 77% </RatingsChip>
+    <div className="max-w-sm mx-auto p-4">
+      <MovieCard 
+        id={1}
+        title="Inception"
+        overview="A mind-bending thriller"
+        poster_path="/test.jpg"
+        genre_ids={[28, 878]}
+        release_date="2010-07-16"
+        />
+
+    </div>
     </>
   )
 }

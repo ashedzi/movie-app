@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './styles/main.css'
 import MovieCard from './components/movieCard'
+import SearchBar from './components/searchBar'
+import MovieComponent from './api/tmdb'
 
 function App() {
 
@@ -14,9 +16,10 @@ function App() {
         poster_path="/test.jpg"
         genre_ids={[28, 878]}
         release_date="2010-07-16"
-        />
-
+      />
     </div>
+
+    <SearchBar> Search here...</SearchBar>
     </>
   )
 }

@@ -1,10 +1,11 @@
 interface Props {
     children: React.ReactNode;
+    type: string;
 }
 
 function Button({children}: Props) {
     return (
-    <button className="bg-primary px-5 py-2 rounded-md cursor-pointer text-sm text-white font-medium hover:bg-red-700">
+    <button className="bg-primary px-4 py-2 rounded-md cursor-pointer text-xs text-white font-semibold hover:bg-red-700">
        {children}
     </button>
     )

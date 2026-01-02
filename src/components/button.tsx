@@ -1,6 +1,6 @@
 interface Props {
     children: React.ReactNode;
-    type: string;
+    label: string;
 }
 
 function Button({children}: Props) {

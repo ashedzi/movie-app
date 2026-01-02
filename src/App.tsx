@@ -3,6 +3,7 @@ import './styles/main.css'
 import MovieCard from './components/movieCard'
 import SearchBar from './components/searchBar'
 import MovieComponent from './api/tmdb'
+import NavItem from './components/navItem'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     </div>
 
     <SearchBar> Search here...</SearchBar>
+    <NavItem>Home</NavItem>
     </>
   )
 }

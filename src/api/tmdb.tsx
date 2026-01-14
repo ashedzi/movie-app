@@ -7,7 +7,7 @@ const ACCESS_TOKEN = import.meta.env.VITE_TMDB_ACCESS_TOKEN;
 function MovieComponent() {
     const [movies, setMovies] = useState<Movie[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect (() => {
         async function fetchMovies() {
@@ -20,7 +20,9 @@ function MovieComponent() {
                     const movies = await response.json();
                     setMovies(movies.results);
                 } catch(err) {
-                    setError(err.message);
+                    if(err instanceof Error) {
+                        setError(err.message);
+                    }
                 } finally {
                     setLoading(false); 
             }

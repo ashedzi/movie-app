@@ -21,7 +21,7 @@ function App() {
     </div>
 
     <SearchBar> Search here...</SearchBar>
-    <NavItem>Home</NavItem>
+    {/* <NavItem>Home</NavItem> */}
     </>
   )
 }
